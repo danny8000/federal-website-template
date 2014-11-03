@@ -13,5 +13,10 @@ Thumbs.db
 #########################
 # Node, Bower and Grunt #
 #########################
-bower-components
-node-modules
+bower_components
+node_modules
+#########################
+# Jekyll Output #
+#########################
+bower_components
+node_modules

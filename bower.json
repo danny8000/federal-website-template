@@ -1,0 +1,24 @@
+{
+  "name": "federal-website-template",
+  "version": "0.0.1",
+  "homepage": "https://github.com/danny8000/federal-website-template",
+  "authors": [
+    "danielgmurphy@gmail.com"
+  ],
+  "description": "Template for creating a US Federal Government website.",
+  "keywords": [
+    "Digital",
+    "Strategy"
+  ],
+  "license": "Public Domain",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+      "bootstrap": "3.3.0"
+    }
+}

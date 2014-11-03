@@ -13,5 +13,5 @@ Thumbs.db
 #########################
 # Node, Bower and Grunt #
 #########################
-front/bower_components
-front/node_modules
+bower-components
+node-modules

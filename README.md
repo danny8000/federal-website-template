@@ -31,3 +31,10 @@ Mobile-first responsive
 1. Install the twitter bootstrap depenancies:
  1. ```cd bower-components/bootstrap```
  1. ```npm install```
+
+
+ ## Links
+
+ https://github.com/github/pages-gem
+
+ https://rtcamp.com/tutorials/nodejs/node-js-npm-install-ubuntu/

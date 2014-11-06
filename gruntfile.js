@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     /* 
      * CONCAT
      * 
-     * Combine vendor supplied CSS files
+     * Combine vendor supplied files
      * 
     */
     concat: {
@@ -22,7 +22,14 @@ module.exports = function(grunt) {
           'bower_components/normalize-css/normalize.css',
           'bower_components/font-awesome/css/font-awesome.min.css'
         ],
-        dest: 'assets/css/vendor.css',
+        dest: 'assets/css/vendor.css'
+      },
+      ielt9: {
+        src: [
+          'bower_components/html5shiv/dist/html5shiv.min.js',
+          'bower_components/respond/dest/respond.min.js'
+        ],
+        dest: 'assets/js/ielt9.js'
       }
     },
 
@@ -92,6 +99,13 @@ module.exports = function(grunt) {
             flatten: true,
             src: ['bower_components/jquery/dist/jquery.min.js'],
             dest: 'assets/js',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: ['bower_components/font-awesome/fonts/*'],
+            dest: 'assets/fonts',
             filter: 'isFile'
           }
         ]

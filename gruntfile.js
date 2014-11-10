@@ -17,7 +17,7 @@ module.exports = function(grunt) {
      * 
     */
     concat: {
-      main: {
+      vendor: {
         src: [
           'bower_components/normalize-css/normalize.css',
           'bower_components/font-awesome/css/font-awesome.min.css'
@@ -41,24 +41,15 @@ module.exports = function(grunt) {
      * All of the cf-framework LESS files have been added to styles.css.
      */
     less: {
-      main: {
+      bootstrap: {
         options: {
           paths: ['_assets/less'],
           compress: true,
           sourceMap: true,
-          sourceMapFilename: 'assets/css/sourcemap.css.map'
+          sourceMapFilename: 'assets/css/bootstrap.sourcemap.css.map'
         },
         files: {
-          "assets/css/theme.min.css": ["_assets/less/theme.less"]
-        }
-      },
-      blog: {
-        options: {
-          paths: ['_assets/less'],
-          compress: true
-        },
-        files: {
-          "assets/css/blog.min.css": ["_assets/less/blog.less"]
+          "assets/css/bootstrap.min.css": ["_assets/less/bootstrap.less"]
         }
       }
     },
@@ -78,13 +69,6 @@ module.exports = function(grunt) {
             flatten: true,
             src: ['bower_components/bootstrap/dist/fonts/*'],
             dest: 'assets/fonts',
-            filter: 'isFile'
-          },
-          {
-            expand: true,
-            flatten: true,
-            src: ['bower_components/bootstrap/dist/css/bootstrap.min.css'],
-            dest: 'assets/css',
             filter: 'isFile'
           },
           {

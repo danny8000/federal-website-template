@@ -22,7 +22,7 @@ exclude: ["README.md", "package.json", "bower.json", "bower_components", "node_m
 # When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
 # See http://jekyllrb.com/docs/github-pages/ for more info
 #baseurl: ''
-#baseurl: '/federal-website-template'
+baseurl: '/federal-website-template'
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl: 'assets/img/logo_210.png'

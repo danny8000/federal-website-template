@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-url: "http://danny8000.github.io/" # the base hostname & protocol for your site
+url: "http://danny8000.github.io" # the base hostname & protocol for your site
 
 timezone: "America/New_York"
 
@@ -22,7 +22,7 @@ exclude: ["README.md", "package.json", "bower.json", "bower_components", "node_m
 # When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
 # See http://jekyllrb.com/docs/github-pages/ for more info
 #baseurl: ''
-baseurl: '/federal-website-template'
+#baseurl: '/federal-website-template'
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl: 'assets/img/logo_210.png'

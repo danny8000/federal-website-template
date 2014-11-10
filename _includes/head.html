@@ -1,21 +1,20 @@
-  <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="{{ page.description }}">
-    <meta name="author" content="{{ page.author }}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
     <!-- Bootstrap core CSS -->
     <link href="{{ "/assets/css/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet">
 
-    <!-- Bootstrap theme CSS -->
-    <link href="{{ "/assets/css/theme.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+    <!-- Bootstrap theme CSS 
+    <link href="{{ "/assets/css/theme.min.css" | prepend: site.baseurl }}" rel="stylesheet">-->
 
     <!-- Custom styles for the blog template -->
     <link href="{{ "/assets/css/blog.min.css" | prepend: site.baseurl }}" rel="stylesheet">
@@ -24,4 +23,3 @@
     <!--[if lt IE 9]>
       <script src="{{ "/assets/js/ielt9.js" | prepend: site.baseurl }}"></script>
     <![endif]-->
-  </head>

@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: one_column_page
+title: "Home"
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+  <ul>
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -20,10 +18,12 @@ layout: default
 
   <p><a href="sample-bootstrap-post.html">sample-bootstrap-post.html</a></p>
 
-  <p><a href="sample-bootstrap-post.html">sample-bootstrap-theme.html</a></p>
+  <p><a href="sample-bootstrap-theme.html">sample-bootstrap-theme.html</a></p>
 
-  <p><a href="sample-bootstrap-post.html">accessibility-statement.html</a></p>
+  <p><a href="about/accessibility-statement.html">accessibility-statement.html</a></p>
+
+  <p><a href="about/">About</a></p>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+

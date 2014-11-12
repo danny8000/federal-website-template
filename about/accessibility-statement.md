@@ -1,8 +1,9 @@
 ---
-layout: one_column_page
+layout: two_column_page
 title:  "Webpage and Document Accessibility Policy"
-date:   2014-11-03 21:47:14
+date:   2014-11-03 08:30:00
 categories: accessibility 508
+category: About
 ---
 
 ## Introduction

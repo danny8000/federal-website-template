@@ -1,19 +1,19 @@
 # Site settings
 title: Federal Website Template
 
-subtitle: A set of principles and standards for the Consumer Financial Protection Bureau's design projects.
+subtitle: 
 
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
+author: "Agency XYZ Staff"
+
 url: "http://danny8000.github.io" # the base hostname & protocol for your site
 
 timezone: "America/New_York"
 
-# Build settings
-markdown: kramdown
 exclude: ["README.md", "package.json", "bower.json", "bower_components", "node_modules", "npm-debug.log", "gruntfile.js"]
 
 
@@ -24,9 +24,8 @@ exclude: ["README.md", "package.json", "bower.json", "bower_components", "node_m
 #baseurl: ''
 baseurl: '/federal-website-template'
 
-# Point the logo URL at a file in your repo or hosted elsewhere by your organization
-logourl: 'assets/img/logo_210.png'
-logoalt: 'Consumer Financial Protection Bureau'
+# Build settings
+markdown: kramdown
 
 # Kramdown settings
 kramdown:
@@ -37,18 +36,25 @@ kramdown:
 # Main Navigation
 # List links that should appear in the main navigation (header) here
 mainnav:
-- text: Overview
-  url: index.html
-  internal: true
-- text: Guides
-  url: guides/guides.html
-  internal: true
-- text: Visual identity
-  url: identity/identity.html
-  internal: true
-- text: UI toolkit
-  url: ui-toolkit/ui-toolkit.html
-  internal: true
+- text: Home
+  url: /
+  category: Home
+- text: Press releases
+  url: /press/
+  category: Press
+- text: Blog
+  url: /blog/
+  category: Blog
+- text: Publications
+  url: /publications/
+  category: Publications
+- text: Data
+  url: /data/
+  category: Data
+- text: About
+  url: /about/
+  category: About
+
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
@@ -57,23 +63,15 @@ secondarynav:
   url: index.html
   internal: true
   category: Overview
-- text: Design principles
-  url: guides/design-principles.html
+- text: About us
+  url: about/
   internal: true
-  category: Guides
-- text: Accessible interfaces
-  url: guides/accessible-interfaces.html
+  category: About
+- text: Accessibity statement
+  url: about/accessibility-statement.html
   internal: true
-  category: Guides
-- text: Effective forms
-  url: guides/effective-forms.html
+  category: About
+- text: Contact us
+  url: about/contact-us.html
   internal: true
-  category: Guides
-
-
-# Footer Navigation
-# List links that should appear in the footer navigation (footer) here
-footernav:
-- text: Home
-  url: index.html
-  internal: true
+  category: About

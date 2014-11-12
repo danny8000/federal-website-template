@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+    <div class="container" role="main">
+
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
+
+      <div class="row">
+
+        <div class="col-sm-8">
+
+          {{ content }}
+
+        </div><!-- /.col-sm-8 -->
+
+        <div class="col-sm-3 col-sm-offset-1">
+
+          {% include sidebar.html %}
+
+        </div><!-- /.col-sm-3 -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->

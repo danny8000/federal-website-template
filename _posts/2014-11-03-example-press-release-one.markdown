@@ -4,7 +4,6 @@ title:  "Example press release one"
 date:   2014-11-03 08:30:00
 categories: press
 category: Press
-excerpt_separator: <!--more-->
 ---
 
 ¡Lorem ipsum dolor sit amet, et dúo minim insoleñs definitionem, scaévola perpetua scripserit cú eos! Prí consulatu evertitúr nó, sed omñis inermís ne. Iñ ius clitá splendide, án vis inimicus suavítate. An ñam dicánt añtiopam, quot consétetur éos án, in séd repudiandaé signiferúmque. Mea cu eius simúl.

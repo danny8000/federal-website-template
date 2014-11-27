@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: "Agency XYZ Blog"
+layout: blog_roll
+title: "The Directors Blog"
 category: Blog
 ---
 
@@ -10,7 +10,9 @@ category: Blog
   	{% if post.categories contains 'blog' %}
 
     	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-     
+     	
+     	<p>{{ page.author }} | {{ page.date | date: "%B %-d, %Y" }}</p>
+
     	{{ post.excerpt }}
 
     {% endif %}

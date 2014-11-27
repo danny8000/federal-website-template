@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     concat: {
       vendor: {
         src: [
-          'bower_components/normalize-css/normalize.css',
+          'bower_components/html5-boilerplate/css/main.css',
           'bower_components/font-awesome/css/font-awesome.min.css'
         ],
         dest: 'assets/css/vendor.css'
@@ -44,12 +44,13 @@ module.exports = function(grunt) {
       bootstrap: {
         options: {
           paths: ['_assets/less'],
-          compress: true,
+          compress: false,
           sourceMap: true,
-          sourceMapFilename: 'assets/css/bootstrap.sourcemap.css.map'
+          sourceMapFilename: 'assets/css/assets/css/federal_website_template.sourcemap.css.map',
+          sourceMapURL: '/assets/css/federal_website_template.sourcemap.css.map'
         },
         files: {
-          "assets/css/bootstrap.min.css": ["_assets/less/bootstrap.less"]
+          "assets/css/federal_website_template.min.css": ["_assets/less/bootstrap.less"]
         }
       }
     },

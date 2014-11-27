@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: blog
 title:  "Example press release one"
 date:   2014-11-03 08:30:00
 categories: press

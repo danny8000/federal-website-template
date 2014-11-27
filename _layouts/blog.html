@@ -1,19 +1,39 @@
 ---
-layout: default
+layout: default_no_container
 ---
+
+    <div class="blog-masthead">
+
+      <div class="container">
+
+          <h3 class="blog-title">The Director's Blog</h3>
+          <p class="lead blog-description">Weely updates from the Office of Financial Research</p>
+
+      </div>
+
+    </div>
 
     <div class="container" role="main">
 
-      <div class="blog-header">
-        <h1 class="blog-title">Agency Blog</h1>
-        <p class="lead blog-description">Weely updates from the US Department of XYZ.</p>
-      </div>
-
       <div class="row">
 
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-2">
+          <h4>News &amp; Events</h4>
+          <ul>
+            <li>Press Releases</li>
+            <li>Conferences</li>
+            <li>Attended Events</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-7 blog-main">
 
           <div class="blog-post">
+
+            <h1>{{ page.title }}</h1>
+
+            <p>by {{ page.author }} | {{ page.date | date: "%B %-d, %Y" }}</p>
 
             {{ content }}
 
@@ -28,7 +48,7 @@ layout: default
 
         </div><!-- /.blog-main -->
 
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="col-sm-3 blog-sidebar well">
         
           {% include blog_sidebar.html %}
 
@@ -36,4 +56,4 @@ layout: default
 
       </div><!-- /.row -->
 
-    </div><!-- /.container -->
+    </div><!-- /#content -->

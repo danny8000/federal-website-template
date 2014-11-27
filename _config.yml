@@ -1,16 +1,16 @@
 # Site settings
-title: Federal Website Template
+title: OFR
 
-subtitle: 
+subtitle: "Office of Financial Research"
 
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-author: "Agency XYZ Staff"
+author: "Office of Financial Research"
 
-agency: "XYZ Agency"
+agency: "Office of Financial Research"
 
 url: "http://danny8000.github.io" # the base hostname & protocol for your site
 
@@ -23,8 +23,8 @@ exclude: ["README.md", "package.json", "bower.json", "bower_components", "node_m
 # For user/organization pages set this to an empty string
 # When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
 # See http://jekyllrb.com/docs/github-pages/ for more info
-#baseurl: ''
-baseurl: '/federal-website-template'
+baseurl: ''
+#baseurl: '/federal-website-template'
 
 # Build settings
 markdown: kramdown
@@ -43,9 +43,6 @@ mainnav:
 - text: Home
   url: /
   category: Home
-- text: Press releases
-  url: /press/
-  category: Press
 - text: Blog
   url: /blog/
   category: Blog

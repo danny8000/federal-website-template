@@ -14,9 +14,9 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         #428bca;
+@brand-primary:         #0d3866;
 @brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
+@brand-info:            #ccc;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
@@ -28,7 +28,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @gray-darker;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -42,11 +42,11 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  Calibri, "Gill Sans", Verdana, "Helvetica Neue", Helvetica, Asans-serif;
+@font-family-sans-serif:  Roboto, "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 //Segoe, "Segoe UI", "DejaVu Sans",  "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Gotham, "Helvetica Neue", Helvetica
 
-@font-family-serif:       Cambria, Baskerville, "Palatino Linotype", Palatino, "Times New Roman", serif;
+@font-family-serif:       "PT Serif", Cambria, Baskerville, "Palatino Linotype", Palatino, "Times New Roman", serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -70,8 +70,8 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
-@headings-font-weight:    500;
-@headings-line-height:    1.1;
+@headings-font-weight:    300; //light
+@headings-line-height:    1.2;
 @headings-color:          inherit;
 
 
@@ -146,7 +146,7 @@
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-@btn-font-weight:                normal;
+@btn-font-weight:                400;
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
@@ -384,12 +384,12 @@
 
 // Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-color:                      lighten(@gray-light, 15%);
-@navbar-inverse-bg:                         #222;
+@navbar-inverse-color:                      #eee;
+@navbar-inverse-bg:                         @brand-primary;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 lighten(@gray-light, 15%);
+@navbar-inverse-link-color:                 #eee;
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
